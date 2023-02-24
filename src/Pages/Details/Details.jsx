@@ -11,6 +11,7 @@ const Details = () => {
 
   useEffect(() => {
     const getMovie = async () => {
+      if (!params.id) return;
       try {
         const response = await fetch(
           `https://cogitize-practice-suggestmovies.onrender.com/movie/${params.id}`
