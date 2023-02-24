@@ -4,9 +4,8 @@
   padding-top: 160px;
   display: flex;
   justify-content: center;
-  background-size: cover;
-  background-image: url(../../assets/styles/images/Background.png);
-  height: 1800px;
+  // background-size: cover;
+  // background-image: url(../../assets/styles/images/Background.png);
 }
 .content {
   max-width: 1440px;
@@ -36,14 +35,14 @@
   align-items: flex-start;
   margin-top: 80px;
   margin-bottom: 70px;
+  position: relative;
 }
 .label_name {
   position: absolute;
   width: 108px;
   height: 40px;
-  bottom: 67%;
   font-family: inherit;
-
+  top: 73px;
   // font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
