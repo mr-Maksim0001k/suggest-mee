@@ -63,10 +63,11 @@ const Details = () => {
           <div className={s.prop_list}>
             <DetailsProp
               isRate={true}
-              label={"Rate"}
+              // label={"Rate"}
               value={movie.rating?.toFixed(1)}
             />
 
+            <br />
             <br />
 
             <DetailsProp label={"Type"} value={movie.type} />

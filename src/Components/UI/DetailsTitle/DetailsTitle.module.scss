@@ -1,6 +1,7 @@
 .container {
   width: 1200px;
   height: 480px;
+  position: relative;
   & > img {
     display: block;
     width: 100%;
@@ -26,10 +27,9 @@
   padding: 40px;
   gap: 8px;
   position: absolute;
-  width: 500px;
-  height: max-content;
-  top: 32%;
-  left: 24%;
+  height: min-content;
+  top: 88%;
+  left: 7%;
   // left: 450px;
   // top: 518px;
   background: rgba(32, 40, 62, 0.8);
