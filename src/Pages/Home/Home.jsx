@@ -49,15 +49,15 @@ const MainContainer = () => {
     }
   };
 
-  useEffect(() => {
-    getMovies();
-  }, []);
-
   const handleInput = (e) => {
     const value = e.target.id;
     setInputValue(value);
 
     getMoviesForQuery(value);
+  };
+
+  const BtnElem = () => {
+    getMoviesForQuery(inputValue);
   };
 
   return (
@@ -70,9 +70,10 @@ const MainContainer = () => {
             </div>
             <div className={s.label_container}>
               <InputRadio onChange={handleInput} value={inputValue} />
-              <p className={s.label_name}>
-                Any<span>(120)</span>
-              </p>
+              <div className={s.span_container}>
+                <span className={s.label_name}>{inputValue}</span>
+                <span className={s.numbers}>({movies.length})</span>
+              </div>
             </div>
           </div>
 
@@ -92,9 +93,10 @@ const MainContainer = () => {
                   Didin’t find the one you looking for?
                 </p>
               </div>
-              <Button />
+              <Button BtnElem={BtnElem} />
             </div>
           </ul>
+          <div className={s.margin_b}></div>
         </div>
       </div>
     </div>

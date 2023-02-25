@@ -1,11 +1,11 @@
 @import url(./_fonts.scss);
 
 body {
-  min-height: 90vh;
   background-image: url(../../assets/styles/images/Background.png);
   background: #121829;
   backdrop-filter: blur(20px);
   background-size: cover;
+  min-height: 100vh;
 }
 
 // * {

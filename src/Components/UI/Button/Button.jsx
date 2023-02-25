@@ -1,7 +1,11 @@
 import styles from "./Button.module.scss";
 
-const Button = () => {
-  return <button className={styles.button}>Suggest more</button>;
+const Button = ({ BtnElem }) => {
+  return (
+    <button onClick={BtnElem} className={styles.button}>
+      Suggest more
+    </button>
+  );
 };
 
 export default Button;
