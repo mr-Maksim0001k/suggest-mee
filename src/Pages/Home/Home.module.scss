@@ -1,12 +1,10 @@
 .container {
-  background: #121829;
   width: 100%;
   padding-top: 160px;
   display: flex;
   justify-content: center;
-
-  // background-size: cover;
-  // background-image: url(../../assets/styles/images/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .content {
   max-width: 1440px;
