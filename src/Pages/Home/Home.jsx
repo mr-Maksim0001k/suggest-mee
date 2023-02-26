@@ -93,10 +93,12 @@ const MainContainer = () => {
                   Didin’t find the one you looking for?
                 </p>
               </div>
-              <Button BtnElem={BtnElem} />
             </div>
           </ul>
-          <div className={s.margin_b}></div>
+
+          <div className={s.margin_b}>
+            <Button BtnElem={BtnElem} />
+          </div>
         </div>
       </div>
     </div>
